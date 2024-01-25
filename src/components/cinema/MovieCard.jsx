@@ -51,7 +51,7 @@ export default function MovieCard({ movie, onCartClick }) {
         onClick={() => handleMovieSelection(movie)}
       >
         <img
-          className="w-full object-cover"
+          className="w-full h-3/4 object-cover"
           src={getImgUrl(movie.cover)}
           alt=""
         />
