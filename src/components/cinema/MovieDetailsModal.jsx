@@ -1,4 +1,5 @@
 import React from "react";
+import tag from '../../assets/tag.svg';
 import { getImgUrl } from "../../utility/cine-utility";
 
 export default function MovieDetailsModal({ movie, onClose, onAddCart }) {
@@ -30,7 +31,7 @@ export default function MovieDetailsModal({ movie, onClose, onAddCart }) {
                 href="#"
                 onClick={(e) => onAddCart(e, movie)}
               >
-                <img src="./assets/tag.svg" alt="" />
+                <img src={tag} alt="" />
                 <span>${movie.price} | Add to Cart</span>
               </a>
               <a
